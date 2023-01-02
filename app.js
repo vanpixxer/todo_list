@@ -38,5 +38,21 @@ addTask.addEventListener('click' , function() {
         taskContainer.appendChild(task);
     }
 
+    // we want the placeholder text to reappear in the input once we have added a todo
+    inputTask.value = "";
+
+    // add functionality to the checkmark and delete buttons
+    checkButton.addEventListener('click', function() {
+
+        checkButton.parentElement.style.textDecoration = "line-through";
+    })
+
+    deleteButton.addEventListener('click', function(e) {
+
+        //target references the element that is clicked - ie. the delete btn
+        let target = e.target;
+        target.parentElement.parentElement.remove();
+    })
+
 
 });
