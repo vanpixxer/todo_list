@@ -1,0 +1,52 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    height: 100vh;
+    background: url(img/clothesline.jpg) no-repeat center center/ cover;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.add-task-container {
+    width: 350px;
+    padding: 20px 10px;
+    background-color:  #F6F4E9;
+    border-radius: 20px;
+    box-shadow: 0 0 9px;
+
+    display: flex;
+}
+
+input {
+    flex: 5;
+    margin-right: 10px;
+    border-radius: 10px;
+    font-size: 1.2rem;
+    padding: 6px;
+}
+
+#add-task {
+    flex: 1;
+    /* duration of hover effect */
+    transition: 0.3s;
+    font-size: 1.2rem;
+    padding: 5px;
+    background-color: #fff;
+    color: green;
+    border: 2px solid green;
+    border-radius: 10px;
+}
+
+#add-task:hover {
+    background-color: green;
+    color: #fff;
+}
